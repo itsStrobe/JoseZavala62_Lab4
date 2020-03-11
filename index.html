@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The amazing calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    </head>
+    <body>
+        <div class="calculatorContainer">
+            <div class="calculatorTitle">
+                THE AMAZING CALCULATOR
+            </div>
+            <div class="display">
+                <input class="inputNumber" id="inputNumber" type="text"/>
+            </div>
+            <div class="operators">
+                <span class="leftContainer">
+                    <span class="resetButton" onclick="reset();">
+                        RESET
+                    </span>
+                    <span class="equalButton" onclick="result();">
+                        =
+                    </span>
+                </span>
+                <span class="rightContainer">
+                    <span class="upperOperators">
+                        <span id="addButton" onclick="operation('+');">
+                            +
+                        </span>
+                        <span id="substractButton" onclick="operation('-');">
+                            -
+                        </span>
+                    </span>
+                    <span class="lowerOperators">
+                        <span id="multiplicationButton" onclick="operation('*');">
+                            *
+                        </span>
+                        <span id="divisionButton" onclick="operation('/');">
+                            /
+                        </span>         
+                    </span>
+                </span>
+            </div>
+            <div class="operationLog">
+                <div class="results">
+                    <label class="labelClass">
+                        RESULT = 
+                    </label>
+                    <input id="resultValue" type="text" disabled/>
+                </div>
+                <div class="logDisplay">
+                    <textarea id="logInformation" disabled></textarea>
+                </div>
+            </div>
+        </div>
+        <script src="./js/index.js" type="text/javascript"></script>
+    </body>
+</html>
